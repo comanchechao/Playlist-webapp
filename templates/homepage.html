@@ -1,0 +1,42 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+
+{% block content%}
+
+<body>
+  <header>
+    <h1>A Wizard and a Creep</h1>
+  </header>
+  <section class="picture">
+      <img src="img/picture.jpg" alt="Wizard picture">
+      <h2 class="note">Once there was a <b>Wizard</b> and a <b>Creep</b></h2>
+  </section>
+  <nav class="topnav">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="signup">Signup</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="fly.html">Fly</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>How does it work?</h2>
+      <p>Create <b>free</b> and <b>customizable</b> playlists for any given moment and feeling while interacting with others' playlists.</p>
+      <img src="" alt="">
+    </article>
+
+    <article>
+      <h2>Create. <b>Explore.</b> Share.</h2>
+      <p>Here you can find a playlist that fits for almost any feeling.</p>
+      <img src="" alt="">
+    </article>
+
+    <section>
+      <h2>Ready to get started?<h2>
+      <a href="platlist.html">Start Creating</a>
+    </section>
+  </main>
+
+  {% endblock %}
