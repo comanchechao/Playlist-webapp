@@ -5,7 +5,6 @@ html, body {
 }
 
 body {
-  margin-top: 80px;
   height: 120vh;
   padding: 30px 0;
 }
@@ -74,7 +73,7 @@ header * {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-
+  margin-top: 10px;
 }
 
 .topnav li a:hover {
