@@ -5,21 +5,20 @@
 
 <body>
   <header class="header">
-    <h1>Welcome to</h1><br>
-    <a class="homeurl" href="{% url 'home'%}"><br>A <span class="wizard">Wizard</span> and A <span class="creep">Creep</span></a>
+    <h1>Welcome to <a class="homeurl" href="{% url 'home'%}"><br>A <b>Wizard</b> and A <br>Creep</br></a></h1>
+    <nav class="topnav">
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="signup">Signup</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="fly.html">Fly</a></li>
+      </ul>
+    </nav>
   </header>
   <section class="picture">
       <img src="assets/picture.jpg" alt="Wizard picture">
       <h2 class="note">Once there was a <b>Wizard</b> and a <b>Creep</b></h2>
   </section>
-  <nav class="topnav">
-    <ul>
-      <li><a href="/about/">About</a></li>
-      <li><a href="signup">Signup</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="fly.html">Fly</a></li>
-    </ul>
-  </nav>
 
   <main>
     <article>
