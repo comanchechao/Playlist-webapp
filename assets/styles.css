@@ -8,8 +8,19 @@ h1, h2, h3, h4, h5, p{
     font-weight: normal;
 }
 
+<<<<<<< Updated upstream
 .header h1 {
+=======
+header * {
+  display: inline;
+}
+
+.header {
+  display: inline-block;
+>>>>>>> Stashed changes
   text-align: center;
+}
+.header h1 {
   position: absolute;
   z-index: 1;
   font-family: Alata;
@@ -22,7 +33,30 @@ h1, h2, h3, h4, h5, p{
   display: inline-block;
   font-size: 110px;
   text-decoration: none;
+<<<<<<< Updated upstream
   font-family: Raleway;
+=======
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.topnav li a:hover {
+  color: #0088a9;
+}
+
+.homeurl {
+  position: absolute;
+  padding: 0;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  font-size: 90px;
+  text-decoration: none;
+  font-family: Alata;
+  font-style: bold;
+>>>>>>> Stashed changes
   color: #d600ff;
   background: linear-gradient(90deg, #06004e, #2f5c9a, #00e6ec, #010647);
   background-size: 1000% 1000%;
