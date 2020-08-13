@@ -1,5 +1,24 @@
-* {
-  box-sizing: border-box;
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 120vh;
+  padding: 30px 0;
+}
+
+@font-face {
+  font-family: 'spyced';
+  src: url(/assets/fonts/spyced-vyad.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'midnight';
+  src: url(/assets/fonts/MidnightMinutes-RpKRl.otf);
 }
 
 
@@ -8,34 +27,52 @@ h1, h2, h3, h4, h5, p{
     font-weight: normal;
 }
 
-<<<<<<< Updated upstream
-.header h1 {
-=======
 header * {
   display: inline;
 }
 
 .header {
   display: inline-block;
->>>>>>> Stashed changes
   text-align: center;
 }
 .header h1 {
   position: absolute;
   z-index: 1;
   font-family: Alata;
-  font-size: 80px;;
+  font-size: 70px;;
   color: #dbdbdb;
   top: 30px;
 }
 
-.wizard {
+.topnav {
+  box-shadow: 0 0 25px 0 black;
+  align-items: center;
   display: inline-block;
-  font-size: 110px;
+  text-align: center;
+  background-color: #181b18;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.topnav li {
+  width: fit-content;
+  margin: 0 auto;
+  margin: 20px;
+}
+
+.topnav li a {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  transition: all 0.3s ease 0s;
+  padding: 9px 25px;
+  align-items: center;
+  display: inline-block;
+  background-color: #00004d;
   text-decoration: none;
-<<<<<<< Updated upstream
-  font-family: Raleway;
-=======
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -51,12 +88,13 @@ header * {
   padding: 0;
   z-index: 1;
   display: inline-block;
+  z-index: 1;
+  top: 200px;
   text-align: center;
   font-size: 90px;
   text-decoration: none;
   font-family: Alata;
   font-style: bold;
->>>>>>> Stashed changes
   color: #d600ff;
   background: linear-gradient(90deg, #06004e, #2f5c9a, #00e6ec, #010647);
   background-size: 1000% 1000%;
@@ -64,7 +102,7 @@ header * {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: hue 29s ease infinite;
-animation: hue 29s ease infinite;
+animation: hue 25s ease infinite;
 
 }
 
@@ -79,17 +117,11 @@ animation: hue 29s ease infinite;
    100%{background-position:0% 53%}
  }
 
-.picture {
-  position: relative;
-}
 
 .picture img {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+    position: relative;
     width:100%;
-    height:auto;
-    display:block;
+    height:100%;
 }
 
 .about {
