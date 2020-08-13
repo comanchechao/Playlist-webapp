@@ -2,7 +2,6 @@ body {
   height: 120vh;
   padding: 30px 0;
   margin: 0;
-  background-color: #212121;
 }
 
 @font-face {
@@ -43,6 +42,67 @@ h1, h2, h3, h4, h5, p{
   top: 60px;
   padding: 0;
 }
+
+.note {
+  font-size: 25px;
+  color: white;
+}
+
+.article-one {
+  position: relative;
+  bottom: 350px;
+  left: 100px;
+}
+
+.article-one h2, .article-two h2 {
+  font-family: Alata;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.article-one p, .article-two p {
+  font-family: Alata;
+  font-size: 25px;
+  position: relative;
+  bottom: 30px;
+}
+
+.article-two {
+  position: relative;
+  bottom: 350px;
+  left: 800px;
+}
+
+.article-three {
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  left: 600px;
+  bottom: 350px;
+}
+
+.article-three h2 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.article-three a {
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #4fc8e0;
+  color: #212121;
+  transition: all 0.3s ease 0s;
+  padding: 9px 25px;
+  cursor: pointer;
+}
+
+.article-three a:hover {
+  background-color: #003761;
+}
+
+
 
 ul {
   margin: 0;
@@ -118,17 +178,18 @@ animation: hue 25s ease infinite;
 
 
 .picture {
+    background-color: #212121;
     position: relative;
     bottom: 320px;
     width:100%;
     height:100%;
     margin: 0;
     padding: 0;
-    animation: fadeIn ease 20s;
--webkit-animation: fadeIn ease 20s;
--moz-animation: fadeIn ease 20s;
--o-animation: fadeIn ease 20s;
--ms-animation: fadeIn ease 20s;
+    animation: fadeIn ease 4s;
+-webkit-animation: fadeIn ease 4s;
+-moz-animation: fadeIn ease 4s;
+-o-animation: fadeIn ease 4s;
+-ms-animation: fadeIn ease 4s;
 }
 @keyframes fadeIn {
 0% {opacity:0;}
