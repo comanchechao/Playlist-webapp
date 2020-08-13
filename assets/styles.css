@@ -1,12 +1,7 @@
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   height: 120vh;
   padding: 30px 0;
+  margin: 0;
 }
 
 @font-face {
@@ -27,27 +22,33 @@ h1, h2, h3, h4, h5, p{
     font-weight: normal;
 }
 
-header * {
-  display: inline;
+
+.homepage-h1 {
+  text-align: center;
+  margin: auto;
 }
 
-.header {
-  display: inline-block;
-  text-align: center;
+.homepage-h1 h2 {
+  position: relative;
+  bottom: 400px;
 }
 .header h1 {
-  position: absolute;
+  position: relative;
+  text-align: center;
   z-index: 1;
   font-family: Alata;
   font-size: 70px;;
   color: #dbdbdb;
-  top: 30px;
+  top: 60px;
+  padding: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
 .topnav {
   box-shadow: 0 0 25px 0 black;
-  align-items: center;
-  display: inline-block;
   text-align: center;
   background-color: #181b18;
   position: fixed;
@@ -59,9 +60,10 @@ header * {
 }
 
 .topnav li {
+  display: inline-block;
   width: fit-content;
   margin: 0 auto;
-  margin: 20px;
+  padding: 0px 20px;
 }
 
 .topnav li a {
@@ -84,24 +86,20 @@ header * {
 }
 
 .homeurl {
-  position: absolute;
-  padding: 0;
-  z-index: 1;
   display: inline-block;
+  position: relative;
+  top: 50px;
   z-index: 1;
-  top: 200px;
+  margin-top: 25px;
   text-align: center;
   font-size: 90px;
   text-decoration: none;
   font-family: Alata;
-  font-style: bold;
-  color: #d600ff;
   background: linear-gradient(90deg, #06004e, #2f5c9a, #00e6ec, #010647);
   background-size: 1000% 1000%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 29s ease infinite;
 animation: hue 25s ease infinite;
 
 }
@@ -118,10 +116,13 @@ animation: hue 25s ease infinite;
  }
 
 
-.picture img {
+.picture {
     position: relative;
+    bottom: 320px;
     width:100%;
     height:100%;
+    margin: 0;
+    padding: 0;
 }
 
 .about {

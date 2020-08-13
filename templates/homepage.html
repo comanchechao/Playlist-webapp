@@ -5,7 +5,11 @@
 
 <body>
   <header class="header">
-    <h1>Welcome to<br> <a class="homeurl" href="{% url 'home'%}">A <b>Wizard</b> and A <b>Creep</b></a></h1>
+    <div class="homepage-h1">
+      <h1>Welcome to<br> <a class="homeurl" href="{% url 'home'%}">A <b>Wizard</b> and A <b>Creep</b></a></h1>
+      <img class="picture" src="assets/picture.jpg" alt="Wizard picture">
+      <h2 class="note">Once there was a <b>Wizard</b> and a <b>Creep</b></h2>
+    </div>
     <nav class="topnav">
       <ul>
         <li><a href="/about/">About</a></li>
@@ -15,11 +19,6 @@
       </ul>
     </nav>
   </header>
-  <section class="picture">
-      <img src="assets/picture.jpg" alt="Wizard picture">
-      <h2 class="note">Once there was a <b>Wizard</b> and a <b>Creep</b></h2>
-  </section>
-
   <main>
     <article>
       <h2>How does it work?</h2>
