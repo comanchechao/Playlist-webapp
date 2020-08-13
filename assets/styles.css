@@ -31,8 +31,11 @@ header * {
   display: inline;
 }
 
-.header h1 {
+.header {
+  display: inline-block;
   text-align: center;
+}
+.header h1 {
   position: absolute;
   z-index: 1;
   font-family: Alata;
@@ -82,9 +85,11 @@ header * {
 
 .homeurl {
   position: absolute;
+  padding: 0;
+  z-index: 1;
+  display: inline-block;
   z-index: 1;
   top: 200px;
-  display: block;
   text-align: center;
   font-size: 90px;
   text-decoration: none;
