@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, p{
 
 .article-three a:hover {
   background-color: #003761;
+  color: white;
 }
 
 .vector-one {
