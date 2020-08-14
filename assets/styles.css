@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, p{
 .article-one {
   position: relative;
   bottom: 350px;
-  left: 100px;
+  left: 140px;
   margin-left: -50px;
 }
 
@@ -115,6 +115,13 @@ h1, h2, h3, h4, h5, p{
   left: 800px;
   bottom: 310px;
   margin-bottom: -310px;
+}
+
+.vector-two {
+  position: relative;
+  right: 650px;
+  bottom: 410px;
+  margin-bottom: -410px;
 }
 
 ul {
