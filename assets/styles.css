@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5, p{
   position: relative;
   bottom: 350px;
   left: 100px;
+  margin-left: -50px;
 }
 
 .article-one h2, .article-two h2 {
@@ -74,7 +75,7 @@ h1, h2, h3, h4, h5, p{
 
 .article-two {
   position: relative;
-  bottom: 350px;
+  bottom: 450px;
   left: 800px;
 }
 
@@ -85,6 +86,7 @@ h1, h2, h3, h4, h5, p{
   position: relative;
   left: 600px;
   bottom: 350px;
+  margin-bottom: -200px;
 }
 
 .article-three h2 {
@@ -108,7 +110,12 @@ h1, h2, h3, h4, h5, p{
   background-color: #003761;
 }
 
-
+.vector-one {
+  position: relative;
+  left: 800px;
+  bottom: 310px;
+  margin-bottom: -310px;
+}
 
 ul {
   margin: 0;
