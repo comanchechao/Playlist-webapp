@@ -4,7 +4,6 @@ html, body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background-color: #1f1f1f;
 }
 
 @font-face {
@@ -62,7 +61,7 @@ h1, h2, h3, h4, h5, p{
   font-family: Alata;
   font-weight: bold;
   font-size: 50px;
-  color: white;
+  color: 21;
 }
 
 .article-one p, .article-two p {
@@ -70,29 +69,30 @@ h1, h2, h3, h4, h5, p{
   font-size: 25px;
   position: relative;
   bottom: 30px;
-  color: white;
+  color: #212121;
 }
 
 .article-two {
   position: relative;
-  bottom: 450px;
+  bottom: 550px;
   left: 800px;
+  margin-bottom: -450px;
 }
 
 .article-three {
-  margin: auto;
   text-align: center;
   display: inline-block;
   position: relative;
+  z-index: 1;
   left: 600px;
-  bottom: 350px;
-  margin-bottom: -200px;
+  bottom: 300px;
+  overflow: hidden;
 }
 
 .article-three h2 {
   font-weight: bold;
   font-size: 35px;
-  color: white;
+  color: #212121;
 }
 
 .article-three a {
@@ -102,8 +102,8 @@ h1, h2, h3, h4, h5, p{
   background-color: #4fc8e0;
   color: #212121;
   transition: all 0.3s ease 0s;
-  padding: 9px 25px;
   cursor: pointer;
+  padding: 9px 25px;
 }
 
 .article-three a:hover {
@@ -113,15 +113,24 @@ h1, h2, h3, h4, h5, p{
 .vector-one {
   position: relative;
   left: 800px;
-  bottom: 310px;
-  margin-bottom: -310px;
+  bottom: 380px;
+  margin-bottom: -380px;
 }
 
 .vector-two {
   position: relative;
   right: 650px;
-  bottom: 410px;
+  bottom: 510px;
   margin-bottom: -410px;
+}
+
+.footer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  bottom: 600px;
+  margin-bottom: -600px;
+  margin-top: -200px;
 }
 
 ul {
