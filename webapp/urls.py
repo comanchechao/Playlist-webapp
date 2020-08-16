@@ -8,6 +8,7 @@ from django.conf import settings
 urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
+    url(r'^playlist/', include('playlist.urls')),
     url(r'^accounts/', include('accounts.urls')),
     url(r'^about/$', views.about, name="about"),
     url(r'^$', views.homepage, name="home"),
