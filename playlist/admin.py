@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Playlist, Genre, Tracks
+from .models import Playlist, Genre, Song
 
 admin.site.register(Playlist)
 admin.site.register(Genre)
-admin.site.register(Tracks)
+admin.site.register(Song)
