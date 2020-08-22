@@ -36,10 +36,37 @@ class Genre(models.Model):
 class Artist(models.Model):
     name = models.CharField(max_length=255)
     slug = models.SlugField()
+    description = models.TextField(default=None)
+    genre = models.ManyToManyField(Genre)
+    date_of_birth = models.DateField(null=True, blank=True)
+    date_of_death = models.DateField('Died', null=True, blank=True)
+
+    def display_genre(self):
+        return ', '.join(genre.name for genre in self.genre.all()[:3])
+
+    display_genre.short_description = 'Genre'
+
+    def __str__(self):
+        return self.name
+
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super(Artist, self).save(*args, **kwargs)
+
+
+class Album(models.Model):
+    name = models.CharField(max_length=50)
+    artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
+    genre = models.ManyToManyField(Genre)
+
+    def display_genre(self):
+        return ', '.join(genre.name for genre in self.genre.all()[:3])
+
+    display_genre.short_description = 'Genre'
+
+    def __str__(self):
+        return self.name
 
 
 class Song(models.Model):
@@ -47,9 +74,14 @@ class Song(models.Model):
     title = models.CharField(max_length=200, verbose_name="Song name")
     description = models.TextField()
     thumbnail = models.ImageField(upload_to="thumbnails", blank=False)
-    artists = models.ManyToManyField(Artist, related_name='songs')
+    artist = models.ForeignKey(Artist, related_name='songs', on_delete=models.CASCADE, default=None)
     created_at = models.DateTimeField(verbose_name='Created At', default=timezone.now)
     genre = models.ManyToManyField(Genre)
+
+    def display_genre(self):
+        return ', '.join(genre.name for genre in self.genre.all()[:3])
+
+    display_genre.short_description = 'Genre'
 
     @property
     def duration(self):
