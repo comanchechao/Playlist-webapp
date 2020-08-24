@@ -1,0 +1,14 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+
+{% block content%}
+    <h1 class="playlist-list-title">Listen to Playlists. Be happy.</h1>
+    <div class="playlists">
+      {% for playlist in playlists %}
+        <div class="playlist">
+          <img src="{{ playlist.thumbnail.url }}" alt="">
+          <h2><a href="#">{{ playlist.title }}</a></h2>
+        </div>
+      {% endfor %}
+    </div>
+{% endblock %}

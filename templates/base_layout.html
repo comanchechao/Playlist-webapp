@@ -1,22 +1,19 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>A Ride</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        {% load static %}
         <link rel="stylesheet" href="{% static 'styles.css' %}">
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Alata&display=swap">
     </head>
-    <body>
-
-
-        <div class="wrapper">
-            {% block content %}
-            {% endblock %}
-        </div>
-    </body>
+  <body>
+    <div class="wrapper">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
 </html>
