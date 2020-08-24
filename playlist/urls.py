@@ -3,5 +3,5 @@ from . import views
 from django.conf.urls import url
 app_name = 'playlist'
 urlpatterns = [
-    url(r'^$', views.playlist_list, name="list"),
+    path('playlists', views.Playlist_List.as_view(), name="list"),
 ]
