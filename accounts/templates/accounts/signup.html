@@ -1,18 +1,16 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
+<h2 class="signup-h2">Signp to begin your <i><strong>journey</strong></i></h2>
  <div class="signup">
-   <h2>SignUp</h2>
     <form class="signupform" method="post">
       {% csrf_token %}
       {% for field in form %}
         <p>
           {{ field.label_tag }}<br>
           {{ field }}
-          {% if field.help_text %}
-            <small style="display: none">{{ field.help_text }}</small>
-          {% endif %}
           {% for error in field.errors %}
+          </p>
           <p class="errortext">{{ error }}</p>
           {% endfor %}
       {% endfor %}

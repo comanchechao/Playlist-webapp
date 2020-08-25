@@ -271,10 +271,44 @@ animation: hue 25s ease infinite;
   border: 3px solid #00dba0;
 }
 
-.signupform {
-  font-family: "Roboto", sans-serif;
-  width:650px;
-  margin:30px auto;
-  background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+.signup-h2 {
+  text-align: center;
+  font-family: Alata;
+  font-size: 45px;
+}
+
+.signup {
+  background-color: #292929;
+  width: 250px;
+  height: 500px;
+  margin: 10px auto auto auto ;
+  border: 5px solid #00dba0;
+  padding: 20px;
   border-radius: 10px;
+  color: white;
+}
+
+.signup input, site-form textarea{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 3px solid #00dba0;
+  border-radius: 20px;
+  background-color: #292929;
+  color: white;
+}
+
+
+.signupform button{
+    display: inline;
+    text-align: center;
+    padding: 10px 10px;
+    background: #0f121f;
+    border: 1px solid #00dba0;
+    color: #00dba0;
+    font-size: 20px;
+    border-radius: 4px;
+    /* margin: 10px 0; */
 }
