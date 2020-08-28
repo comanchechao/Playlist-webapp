@@ -272,43 +272,111 @@ animation: hue 25s ease infinite;
 }
 
 .signup-h2 {
+  color: white;
+  position: relative;
   text-align: center;
   font-family: Alata;
-  font-size: 45px;
+  z-index: 1;
+  font-size: 55px;
 }
 
 .signup {
-  background-color: #292929;
-  width: 250px;
-  height: 500px;
-  margin: 10px auto auto auto ;
-  border: 5px solid #00dba0;
-  padding: 20px;
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
   border-radius: 10px;
-  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.signup input, site-form textarea{
+
+::placeholder {
+  color: black;
+  font-size: 13px;
+}
+
+
+input[type="text"],
+input[type="password"] {
+  position: relative;
+  left: 120px;
+  top: 20px;
   display: block;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  border: 3px solid #00dba0;
-  border-radius: 20px;
-  background-color: #292929;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 350px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus
+ {
+  border-bottom: 4px solid #40f5da;
+  color: #16a085;
+  transition: 0.5s ease;
+}
+
+.signupbutton {
+  position: relative;
+  left: 400px;
+  margin-top: 28px;
+  width: 100px;
+  height: 40px;
+  background: #40f5da;
+  border: none;
+  border-radius: 30px;
+  color: #292929;
+  font-family: Ubuntu;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.signupbutton:hover {
+  background-color: #003761;
   color: white;
 }
 
 
-.signupform button{
-    display: inline;
-    text-align: center;
-    padding: 10px 10px;
-    background: #0f121f;
-    border: 1px solid #00dba0;
-    color: #00dba0;
-    font-size: 20px;
-    border-radius: 4px;
-    /* margin: 10px 0; */
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.signup-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn ease 4s;
+-webkit-animation: fadeIn ease 4s;
+-moz-animation: fadeIn ease 4s;
+-o-animation: fadeIn ease 4s;
+-ms-animation: fadeIn ease 4s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
 }

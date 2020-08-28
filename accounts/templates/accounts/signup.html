@@ -1,7 +1,8 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-<h2 class="signup-h2">Signp to begin your <i><strong>journey</strong></i></h2>
+<h2 class="signup-h2">SignUp to begin your <i><strong>journey</strong></i></h2>
+<img class="signup-img" src="/assets/picture2.jpg" alt="">
  <div class="signup">
     <form class="signupform" method="post">
       {% csrf_token %}
@@ -14,7 +15,7 @@
           <p class="errortext">{{ error }}</p>
           {% endfor %}
       {% endfor %}
-       <button type="submit">SignUp</button>
+       <button class="signupbutton"type="submit">SignUp</button>
     </form>
    </div>
 {% endblock %}
