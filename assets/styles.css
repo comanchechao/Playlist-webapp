@@ -281,20 +281,22 @@ animation: hue 25s ease infinite;
 }
 
 .signup-h2 span{
+  font-size: 57px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-size: 1000% 1000%;
-  background: linear-gradient(90deg, rgba(132,213,230,1) 18%, rgba(213,148,153,1) 44%, rgba(92,154,167,1) 66%, rgba(199,139,128,1) 92%);
+  background: linear-gradient(90deg, #84d5e6, #d59499, #5c9aa7, #c78b80);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-animation: slide 30s ease infinite linear forwards;
+animation: hue 15 ease infinite;
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes hue {
    0%{background-position:0% 53%}
    50%{background-position:100% 48%}
    100%{background-position:0% 53%}
 }
-@keyframes slide {
+@keyframes hue {
    0%{background-position:0% 53%}
    50%{background-position:100% 48%}
    100%{background-position:0% 53%}
