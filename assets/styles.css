@@ -320,25 +320,24 @@ input[type="password"] {
 input[type="text"]:focus,
 input[type="password"]:focus
  {
-  border-bottom: 4px solid #40f5da;
+  border-bottom: 6px solid #40f5da;
   color: #16a085;
-  transition: 0.5s ease;
+  transition: 0.2s ease;
 }
 
 .signupbutton {
   position: relative;
-  left: 400px;
+  left: 200px;
   margin-top: 28px;
-  width: 100px;
-  height: 40px;
+  width: 200px;
+  height: 39px;
   background: #40f5da;
   border: none;
   border-radius: 30px;
   color: #292929;
-  font-family: Ubuntu;
+  font-family: Alata;
   font-size: 20px;
-  text-transform: uppercase;
-  transition: 0.5s ease;
+  transition: 0.4s ease;
   cursor: pointer;
 }
 .signupbutton:hover {
