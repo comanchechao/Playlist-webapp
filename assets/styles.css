@@ -271,7 +271,8 @@ animation: hue 25s ease infinite;
   border: 3px solid #00dba0;
 }
 
-.signup-h2 {
+.signup-h2,
+.login-h2 {
   color: white;
   position: relative;
   text-align: center;
@@ -279,6 +280,51 @@ animation: hue 25s ease infinite;
   z-index: 1;
   font-size: 55px;
 }
+
+.login-h2 {
+  color: #292929;
+}
+
+.login-h2 span {
+  font-family: ubuntu;
+  padding-right: 10px;
+  background-size: 600% 600%;
+  background: linear-gradient(90deg, #000F48, #BF6791, #02C0E4, #007f86);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+   0%{background-position:0% 53%}
+   50%{background-position:100% 48%}
+   100%{background-position:0% 53%}
+}
+
+@-moz-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+}
+@keyframes Gradient {
+   0%{background-position:0% 53%}
+   50%{background-position:100% 48%}
+   100%{background-position:0% 53%}
+ }
+
+ .login p {
+   font-family: alata;
+   font-size: 20px;
+   position: relative;
+   left: 30px;
+   top: 10px;
+ }
+
+ .loginform label {
+   color: white;
+ }
 
 .signup-h2 span{
   font-size: 57px;
@@ -309,7 +355,9 @@ animation: hue 15s ease infinite;
    100%{background-position:0% 53%}
  }
 
-.signup {
+.signup,
+.login
+ {
   position: relative;
   margin: 5% auto;
   width: 600px;
@@ -317,6 +365,11 @@ animation: hue 15s ease infinite;
   background: #FFF;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.login {
+  width: 600px;
+  height: 300px;
 }
 
 
@@ -355,7 +408,8 @@ input[type="password"]:focus
   transition: 0.2s ease;
 }
 
-.signupbutton {
+.signupbutton,
+.loginbutton {
   position: relative;
   left: 200px;
   margin-top: 28px;
@@ -370,8 +424,9 @@ input[type="password"]:focus
   transition: 0.4s ease;
   cursor: pointer;
 }
-.signupbutton:hover {
-  background-color: #003761;
+.signupbutton:hover,
+.loginbutton:hover {
+  background-color: #010135;
   color: white;
 }
 
@@ -390,7 +445,8 @@ input[type="submit"]:active {
   transition: 0.1s ease;
 }
 
-.signup-img {
+.signup-img,
+.login-img {
   position: fixed;
   top: 0;
   left: 0;

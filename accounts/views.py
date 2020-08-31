@@ -1,4 +1,4 @@
-from .forms import SignupForm
+from .forms import SignupForm, LoginForm
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -12,6 +12,7 @@ def SignupView(request):
             user = form.save(commit=False)
             user.is_active = False
             user.save()
+            return redirect('accouonts/login.html')
     else:
         form = SignupForm()
     return render(request, 'accounts/signup.html', {'form': form})
@@ -19,12 +20,12 @@ def SignupView(request):
 
 def LoginView(request):
     if request.method == 'POST':
-        form = AuthenticationForm(data=request.POST)
+        form = LoginForm(data=request.POST)
         if form.is_valid():
             user = form.get_user()
             login(request, user)
             return redirect('hompage.html')
 
     else:
-        form = AuthenticationForm()
+        form = LoginForm()
     return render(request, 'accounts/login.html', { 'form': form })
