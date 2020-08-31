@@ -288,13 +288,20 @@ animation: hue 25s ease infinite;
   background: linear-gradient(90deg, #84d5e6, #d59499, #5c9aa7, #c78b80);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-animation: hue 15 ease infinite;
+  -moz-animation: hue 15s ease infinite;
+animation: hue 15s ease infinite;
 }
 
 @-webkit-keyframes hue {
    0%{background-position:0% 53%}
    50%{background-position:100% 48%}
    100%{background-position:0% 53%}
+}
+
+@-moz-keyframes hue {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 @keyframes hue {
    0%{background-position:0% 53%}
