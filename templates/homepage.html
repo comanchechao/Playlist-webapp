@@ -6,28 +6,32 @@
 <body>
   <header class="header">
     <div class="homepage-h1">
-      <h1>Welcome to<br> <a class="homeurl" href="{% url 'home'%}">A <b>Wizard</b> and A <b>Creep</b></a></h1>
+      <h1>Welcome to<br> <span><a class="homeurl" href="{% url 'home'%}">A Wizard and A Creep</a></span></h1>
       <img class="picture" src="assets/picture.jpg" alt="Wizard picture">
-      <h2 class="note">Once there was a <b>Wizard</b> and a <b>Creep</b></h2>
+      <!-- <h2 class="note">Once there was a <b>Wizard</b> and a <b>Creep</b></h2> -->
     </div>
-    <nav class="topnav">
-      <ul>
-        <li><a href="/about/">About</a></li>
-        <li><a href="{% url 'accounts:signup' %}">Register</a></li>
-        <li><a href="{% url 'accounts:login' %}">Login</a></li>
-        <li><a href="fly.html">Fly</a></li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <div class="topnav">
+        <nav>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="{% url 'accounts:signup' %}">Register</a></li>
+            <li><a href="{% url 'accounts:login' %}">Login</a></li>
+            <li><a href="fly.html">Fly</a></li>
+          </ul>
+        </nav>
+        </div>
+    </div>
   </header>
   <main>
     <article class="article-one">
-      <h2>How does it work?</h2>
+      <h2>How does it work?</h2><br>
       <p>Create <b>free</b> and <b>customizable</b> playlists for any given<br> moment and feeling while interacting with others' playlists.</p>
       <img class="vector-one" src="/assets/undraw_walk_in_the_city_1ma6.svg" height="750"
     width="450" >
     </article>
     <article  class="article-two">
-      <h2>Create. <b>Explore.</b> Share.</h2>
+      <h2>Create. <b>Explore.</b> Share.</h2><br>
       <p>Here you can find a playlist that fits for almost any feeling.</p>
       <img class="vector-two" src="/assets/undraw_Imagination_re_i0xi.svg" width="550" height="750">
     </article>
@@ -35,8 +39,6 @@
       <h2>Ready to get started?<h2>
       <a href="{% url 'accounts:signup' %}">Start Creating</a>
     </div>
-    <footer><img class="footer" src="assets/pngfuel.com.png" height="100"
-       width="150"></footer>
   </main>
 
   {% endblock %}
