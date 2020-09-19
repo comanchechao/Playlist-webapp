@@ -4,7 +4,7 @@ html, body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 .navbar {
@@ -47,7 +47,7 @@ html, body {
   transition: 0.7s ease;
 }
 
-.topnav li a:hover { ;
+.topnav li a:hover {
   color: #06d6a0;
   border-bottom: solid 6px #06d6a0;
   transition: 0.2s ease;
@@ -86,12 +86,12 @@ html, body {
   /* text-align: center; */
   /* align-items: center; */
   /* justify-content: center; */
+  background-color: #F0F0F0;
   width: 100%;
   height: 950px;
-  background-color: #141414;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "left-side right-side";
+  grid-template-areas: "right-side left-side";
 
   /* grid-template-areas: "sena pictures"
   ". pictures"; */
@@ -103,13 +103,17 @@ html, body {
 .left-side {
   /* display: flex;
   align-items: center; */
+  margin-top: 50px;
   grid-area: left-side;
 }
 
 .right-side {
+  margin-top: 50px;
   display: flex;
-  /* justify-content: center; */
+  flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   /* position: absolute; */
   grid-area: right-side;
 }
@@ -121,6 +125,7 @@ html, body {
 
 .cat-picture > img {
   position: absolute;
+  margin-top: 30px;
   top: 100px;
   width: 700px;
   height: 900px;
@@ -130,9 +135,10 @@ html, body {
 
 .right-side h1 {
   width: 700px;
-  margin-bottom: 320px;
-  /* height: 434p; */
-  position: absolute;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  z-index: 1;
+  /* align-self: flex-start; */
   font-family: Sura;
   font-style: normal;
   font-weight: bold;
@@ -145,18 +151,22 @@ html, body {
 }
 
 
-.shop-now a {
-  position: absolute;
-  bottom: 50px;
+.right-side a {
+  /* position: absolute; */
+  z-index: 1;
+  /* bottom: 50px; */
   font-family: 'Staatliches', cursive;
   padding: 8px 23px;
-  font-size: 42px;
+  font-size: 52px;
   color: #ffffff;
   background-color: #3A0CA3;
-  border-radius: 38px;
+  border-radius: 58px;
   transition: 0.7s ease;
   text-decoration: none;
   letter-spacing: 0.03em;
+  align-self: center;
+  margin-top: 70px;
+
 }
 
 .right-side a:hover {
@@ -166,7 +176,7 @@ html, body {
 
 .sena  {
   position: absolute;
-  margin-bottom: -40px;
+  /* margin-bottom: -40px; */
   /* margin: 15 auto; */
   /* top: 75px; */
   /* margin-top: 40px; */
@@ -217,10 +227,18 @@ html, body {
 }
 
 
+.shop-now {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 
 .leather {
   /* position: absolute; */
   /* margin-bottom: 25px; */
+  display: block;
+  position: relative;
+  bottom: 30px;
   grid-area: leather;
   /* top: 200px; */
   font-family: Sura;
@@ -233,8 +251,60 @@ html, body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.shop-section {
+  background-color: #3A0CA3;
+  height: 400px;
+  width: 100%;
+}
 
+.card-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 20px;
+  width: 100%;
+  grid-template-areas: "cards svg-text";
+}
 
+.cards {
+  grid-area: cards;
+  display: flex;
+  justify-content: space-between;
+}
+
+.svg-text {
+  grid-area: svg-text;
+}
+
+.card {
+  list-style: none;
+  position: relative;
+}
+
+.card:before {
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card-background img{
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition:
+  filter 200ms linear,
+  transform 200ms linear;
+}
 
 /* .picture {
     background-color: #212121;
