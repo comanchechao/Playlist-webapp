@@ -128,7 +128,7 @@ html, body {
   margin-top: 30px;
   top: 100px;
   width: 700px;
-  height: 900px;
+  height: 800px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 10px;
 }
@@ -252,28 +252,49 @@ html, body {
 }
 
 .shop-section {
+  margin-top: 60px;
+  display: flex;
+  /* flex-flow: column wrap; */
+  align-items: flex-start;
+  justify-content: center;
   background-color: #3A0CA3;
   height: 400px;
-  width: 100%;
+  padding: 64px 24px;
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 44px;
+  grid-row-gap: 24px;
+  max-width: 1200px;
   width: 100%;
-  grid-template-areas: "cards svg-text";
+  grid-template-areas: "card1 card2 card3";
+  justify-content: center;
+  align-items: center;
 }
 
-.cards {
+@media(min-width: 540px){
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* .cards {
   grid-area: cards;
   display: flex;
   justify-content: space-between;
-}
+} */
 
-.svg-text {
+/* .svg-text {
   grid-area: svg-text;
-}
+} */
 
 .card {
   list-style: none;
@@ -287,12 +308,24 @@ html, body {
   width: 100%;
 }
 
+#card1 {
+  grid-area: card1;
+}
+
+#card2 {
+  grid-area: card2;
+}
+
+#card3 {
+  grid-area: card3;
+}
+
 .card-background img{
   width: 300px;
   height: 400px;
   background-size: cover;
   background-position: center;
-  border-radius: 34px;
+  border-radius: 24px;
   position: absolute;
   top: 0;
   left: 0;
@@ -306,6 +339,39 @@ html, body {
   transform 200ms linear;
 }
 
+.card:hover .card-background img{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .card-background img {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 24px;
+}
+
+.card-category {
+  font-family: alata;
+  color: #dedede;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.card-heading {
+  color: #ffffff;
+  font-family: alata;
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 95%;
+  word-spacing: 100vw;
+  text-transform: capitalize;
+  margin-top: -10px;
+}
 /* .picture {
     background-color: #212121;
     position: relative;
