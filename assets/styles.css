@@ -54,8 +54,8 @@ html, body {
 }
 
 .topnav li a:hover {
-  color: #06d6a0;
-  border-bottom: solid 6px #06d6a0;
+  color: #eeb1fa;
+  border-bottom: solid 6px #eeb1fa;
   transition: 0.2s ease;
 }
 
@@ -75,7 +75,7 @@ html, body {
 
 
  #login-link:hover {
-  color: #2ec4b6;
+  color: #FF61A9;
   border-bottom: none;
   background-color: #3A0CA3;
 }
@@ -390,6 +390,54 @@ html, body {
   text-transform: capitalize;
   margin-top: -10px;
 }
+
+.freeshipping-text {
+  transform: translate(-50%, -50%);
+  /* top: 190%; */
+  margin: auto;
+  /* left: 50%; */
+  display: block;
+  /* position: absolute; */
+  max-width: 450px;
+}
+
+.freeshipping-text h1 {
+  /* margin: auto; */
+  line-height: 65px;
+  letter-spacing: 2px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+
+.freeshipping-span {
+  position: relative;
+  transform: skew(-10deg);
+  transform: translateX(-50%) rotate(-10deg);
+  display: block;
+  /* float: left; */
+  text-shadow: #533d4a 1px 1px,
+  #533d4a 2px 2px,
+  #533d4a 3px 3px,
+  #533d4a 4px 4px,
+  #533d4a 5px 5px,
+  #533d4a 6px 6px;
+  min-width: 10px;
+  min-height: 10px;
+
+}
+
+/* .freeshipping-text span {
+    background-color: solid #FF7EB2;
+    background-repeat: no-repeat;
+    background-siz: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+} */
 /* .picture {
     background-color: #212121;
     position: relative;
