@@ -33,17 +33,17 @@ html, body {
 
 .topnav ul {
   list-style: none;
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
   height: 61px;
 
 
 }
 
 .topnav li a{
-  display: flex;
-  text-align: center;
+  /* display: flex;
+  text-align: center; */
   font-family: Sura;
   font-style: normal;
   font-weight: bold;

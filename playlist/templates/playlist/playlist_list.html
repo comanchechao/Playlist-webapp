@@ -2,14 +2,15 @@
 {% load static %}
 
 {% block content%}
-    <h1 class="playlist-list-title">Listen to Playlists. Be happy.</h1>
     <div class="playlists">
       <div class="playlist">
         <ul>
-          {% for playlist in playlists %}
+          {% for product in products %}
           <li>
             <img src="{{ playlist.thumbnail.url }}" alt="">
-            <h2><a href="{{ playlist.get_absolute_url }}">{{ playlist.title }}</a></h2>
+            <h2><a href="{{ playlist.get_absolute_url }}">{{ product.title }}</a></h2>
+            <p>{{ product.created_at }}</p>
+            <p>{{ product.description }}</p>
           </li>
           {% endfor %}
         </ul>

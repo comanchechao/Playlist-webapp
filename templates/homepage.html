@@ -8,16 +8,7 @@
     <div class="background">
       <img class="background-picture" src="assets/picture5.jpg" alt="">
     </div>
-    <div class="navbar">
-      <div class="topnav">
-          <ul>
-            <li><a class="about-link" href="/about/">About</a></li>
-            <li><a class="products-link" href="fly.html">Products</a></li>
-            <li><a class="signup-link" href="{% url 'accounts:signup' %}">Signup</a></li>
-            <li><a id="login-link" href="{% url 'accounts:login' %}">Login</a></li>
-          </ul>
-      </div>
-    </div>
+
     </header>
     <div class="homepage">
       <div class="left-side">
@@ -63,7 +54,7 @@
                   </div>
                 </div>
               </a>
-              <a class="card" id="card3" href="#">
+              <a class="card" id="card3" href="{% url 'playlist:list' %}">
                 <div class="card-div">
                   <div class="card-background">
                     <img src="assets/stickers.jpg" alt="">
@@ -79,7 +70,7 @@
           <div class="freeshipping-text">
             <h1><span class="freeshipping-span">Everything</span>
               <span class="freeshipping-span">comes with</span>
-              <span class="freeshipping-span">Free shipping</i></span>
+              <span class="freeshipping-span">Free shipping</span>
             </h1>
           </div>
         </main>
